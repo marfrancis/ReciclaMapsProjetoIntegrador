@@ -1,0 +1,10 @@
+/* Accordion */
+.accordion { width:100%; margin:1em 0; clear:both;}
+     .accordion-item {cursor:pointer; font-weight:bold; color:#333; line-height:125%; padding:0.5em 0; display:block; text-decoration:none; font-size:125%; -webkit-transition:all 0.25s ease; -moz-transition:all 0.25s ease; -ms-transition:all 0.25s ease; -o-transition:all 0.25s ease; transition:all 0.25s ease } 
+	 .accordion-item:hover, .accordion-item.open {color:#b5b700;}
+     .accordion .data {padding:0.5em 1.75em 1.5em ; display:block; display:none; line-height:150%;}
+     .accordion-item:before {content:"+"; float:left; margin-right:15px; color:#ccc;}
+     .accordion-item.open:before {-moz-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -o-transform:rotate(-45deg); -ms-transform:rotate(-45deg); transform:rotate(-45deg);}
+	 
+	 .content-block.blue .accordion-item  {color:white;}
+	 .content-block.blue .accordion-item:hover, .content-block.blue .accordion-item.open {color:#e8ea18;}

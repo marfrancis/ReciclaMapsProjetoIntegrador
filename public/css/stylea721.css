@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+
+
+     /* Four Feature Blocks */
+     .fourFeatures {width:100%; height:325px; display:block; position:relative; overflow:hidden; clear:both;}
+          .fourFeatures .block {float:left; width:25%; height:325px; background:#007e49; color:white; position:relative; z-index:2;}
+          .fourFeatures .block.alt, .fourFeatures .overlay.alt {background:#fdb225;}
+          .fourFeatures .block.alt2, .fourFeatures .overlay.alt2 {background:#cf3a36;}
+          .fourFeatures .block.alt3, .fourFeatures .overlay.alt3 {background:#0087c9;}
+          .fourFeatures .block.alt4, .fourFeatures .overlay.alt4 {background:#853d25;}
+          .fourFeatures .block.alt5, .fourFeatures .overlay.alt5 {background:#c03fbd;}
+          .fourFeatures .block.alt6, .fourFeatures .overlay.alt6 {background:#ffffff;}
+          .fourFeatures .block.alt7, .fourFeatures .overlay.alt7 {background:#302d28;}
+          .fourFeatures .block img {position:absolute; z-index:1; top:0px; left:0px; display:block; float:left; min-height:100%; max-height:140%; overflow:hidden; min-width:100%; max-width:140%; transition:0.5s; opacity:0.2;}
+		  	.fourFeatures .block:hover img {opacity:0.4;}
+          .fourFeatures .block h3 {color:white; padding:25px 25px 15px; position:relative; z-index:2;}
+          .fourFeatures .block p {color:white; padding:0 60px 0 25px; position:relative; z-index:2; font-size: 16px; font-weight: 500;}
+          .fourFeatures .block .cor-alt6 {color:black; padding:0 60px 0 25px; position:relative; z-index:2;}
+          .fourFeatures .block a {color:white; text-decoration:none; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid white; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
+          .fourFeatures  .alt6 a {color:black; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid black; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
+               .fourFeatures .block a:hover, .overlay a:hover {color:white; background:#b5b700; border-color:#b5b700;}
+               .cor-alt6-titulo { color: black !important; }
+
+          /* Overlay */
+          .overlay {height:100%; width:100%; position:absolute; z-index:3; background-color:#007e49; transition:0.5s; top:0px; right:-100%;}
+          .overlay.open {right:0% !important; overflow:hidden;}
+          .overlay a.close {color:white; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid white; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
+          .overlay a.close7 {color:black; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid black; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
+          .overlay-content {position:relative; z-index:2; width:90%; margin:0 5%; text-align:left; color:white; top:50%; transform:translateY(-50%); max-width:900px; margin:0 auto;}
+               .overlay-content h3 {color:white;}
+
+          @media screen and (min-width:769px) and (max-width:1024px) {
+               .fourFeatures {height:auto;}
+               .fourFeatures .block {width:50%; height:275px;}
+               .overlay-content {width:80%; margin:0 10%;}
+          }
+          @media screen and (max-width:768px){
+               .fourFeatures {height:auto;}
+               .fourFeatures .block {width:auto; float:none; height:auto; padding:2em 0;}
+               .fourFeatures .block h3 {color:white; padding:15px 25px;}
+               .fourFeatures .block p {color:white; padding:0 80px 0 25px;}
+          }
+
+     /* Video */
+     .homePageVideo {clear:both; border: 0;}
+          .homePageVideo .titleReciclar {position:absolute; z-index:2; bottom:0px; left:0px; background:rgba(255,255,255,0.5); width:100%; display:block;}
+          .homePageVideo .titleReciclar a {padding:1em 1.5em; background:#b5b700; color:white; font-weight:bold; display:inline-block; font-size:125%;}
+
+          @media screen and (max-width:768px){
+               .homePageVideo .title a {font-size:100%;}
+          }
+
+     /* Meet Members */
+     .meet-members {display:block; clear:both; text-align:center; padding:4em 0; background:white;}
+
+     .meet-members .btn {
+        /* margin-top: 1em; */
+        margin-left: 8px;
+        color: #b5b700;
+        border-color: #b5b700;
+    }
+
+    .meet-members .btn:hover {
+        color: white;
+        background: #b5b700;
+    }
+
+
+
+          .members {display:block; clear:both; background:#f1f1f1; text-align:center;}
+               .members .member {display:block;  padding:2em 0;}
+                    .members .member .image {width:20%; max-width:200px; display:inline-block; vertical-align:middle;}
+                    .members .member .copy {width:60%; max-width:700px; margin-left:2.5%; padding-left:2.5%; border-left:2px solid #c1c1c1; display:inline-block; vertical-align:middle; text-align:left;}
+
+                    .members .member .copy .type {font-weight:bold; color:#b5b700; text-transform:uppercase;}
+
+          @media screen and (max-width:1024px) {
+               .meet-members {padding:3em 0;}
+               .members .member .image {width:30%}
+          }
+          @media screen and (max-width:768px){
+               .meet-members {padding:2em 0;}
+               .members .member .image {width:30%}
+               .members .member .copy {width:58%; margin-left:5%; padding-left:5%;}
+          }
+
+/* Title block */
+.title-block {display:block; clear:both; text-align:center; padding:0; background:white;}
+     .title-block h1 {border-bottom:1px solid #ddd;  padding:1.5em 0 1em;}
+
+/* Responsive Video Embed */
+.videoWrapper {position:relative; padding-bottom:56.25%; padding-top:-381px; height:0; overflow:hidden; border: 0;}
+     .videoWrapper iframe, .videoWrapper object, .videoWrapper embed {position:absolute;top:0;left:0;width:100%; height:100%; z-index:1; border: 0;}
+
+/* more news */
+
+
+.more-news {
+     display: block;
+     clear: both;
+     background: #1b232e;
+     color: white;
+     text-align: center;
+     padding: 2em;
+     font-weight: 600;
+ }
+
+ .more-cards {
+    display: block;
+    clear: both;
+    background: black;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    font-weight: 600;
+
+}
+
+ .more-news a {
+     color: white;
+     font-size: 125%;
+ }
+
+ strong, b {
+     font-weight: 700;
+ }
+
+ .meet-members h2 {
+     color: #b5b700;
+     font-size: 240%;
+     text-transform: uppercase;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 900;
+
+ }
+
+ .meet-members .wrapper p {
+    line-height: 150%;
+    padding: 0.5em 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.meet-members .wrapper {
+    max-width: 950px;
+}
+
+.copy {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: -3px;
+    color: white;
+    text-transform: none;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    text-align: center;
+}
+
+
+.strong-color {
+    color: #b5b700;
+}
+
+/* footer a.socialIcon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    background: white;
+    color: #1b232e;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0 5px 8px 0;
+} */
+
+/* strong, b {
+    font-weight: 700;
+} */
+
+
+/* onde reciclar */
+
+.title-block {
+    display: block;
+    clear: both;
+    text-align: center;
+    padding: 0;
+    background: white;
+}
+
+.content-block {
+    display: block;
+    clear: both;
+    padding: 4em 0;
+    background: white;
+    text-align: left;
+    float: left;
+    width: 1
+
+}
+
+.blue {
+    background: #609ed3;
+    color: white;
+}
+
+.green {
+    background: #b5b700;
+    color: white;
+}
+
+.blue h3, .blue h4 {
+    color: white;
+}
+
+.content-block ul, article ul {
+    list-style-type: disc;
+    margin: 1em;
+    line-height: 150%;
+}
+
+.green .downloads, .blue .downloads {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+.downloads {
+    background: #b6b701;
+    display: block;
+    padding: 2em;
+    margin-top: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.green .downloads a, .blue .downloads a {
+    color: white;
+}
+.downloads a[href$=".pdf"] {
+    background: url(/img/downloadbutton_2x.png) left center no-repeat;
+    background-size: 40px;
+}
+.downloads a {
+    padding-left: 55px;
+    width: calc(32.5% - 55px);
+    background: url(/img/link.png) left center no-repeat;
+    background-size: 40px;
+}
+.downloads a {
+    color: white;
+    display: inline-block;
+    width: 28%;
+    padding: 0.6em 0 0.6em 5%;
+    margin: 0.5em 0;
+    vertical-align: top;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 115%;
+}
+
+.green h3, .green h4 {
+    color: white;
+}
+
+.content-block h3 {
+    font-weight: bold;
+}
+
+.em-casa p {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+}
+
+.em-casa ul li {
+    list-style-type: disc !important;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding: 5px;
+
+}
+
+.em-casa ul {
+    padding: 37px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
